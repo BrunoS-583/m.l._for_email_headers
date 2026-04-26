@@ -1,4 +1,5 @@
 import pandas as pd
+import sys
 
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.ensemble import RandomForestClassifier
@@ -246,4 +247,23 @@ def main():
     XGBoost()
 
 if __name__ == "__main__":
-    main()
+    class Tee:
+        def __init__(self, *files):
+            self.files = files
+
+        def write(self, obj):
+            for f in self.files:
+                f.write(obj)
+        
+        def flush(self):
+            for f in self.files:
+                f.flush()
+
+    original_stdout = sys.stdout
+    with open('../../results/model_results.txt', 'w') as f:
+        sys.stdout = Tee(sys.stdout, f)
+        
+        try:
+            main()
+        finally:
+            sys.stdout = original_stdout
