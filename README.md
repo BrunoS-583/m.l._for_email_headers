@@ -8,8 +8,15 @@ Download SpamAssassin Dataset here: https://spamassassin.apache.org/old/publicco
  - [20030228_spam.tar.bz2]
  - [20030228_spam_2.tar.bz2]
 
+Setup:
+- Extract the dataset
+- Place it in `data/raw/`
+- Inside `data/raw/`, organize emails into:
+  - `easyham/`
+  - `hardham/`
+  - `spam/`
 
-Unpack and move to `data` folder.
+Each folder must contain the corresponding email files before running preprocessing
 
 ### Running Project
 From the root of the project run:
