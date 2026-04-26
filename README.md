@@ -20,4 +20,4 @@ From the root of the project run:
 
 `python3 src/features/build_features.py`
 
-`python3 src/models/train_model.py`
+`python3 src/models/prediction_model.py`
