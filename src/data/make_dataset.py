@@ -7,7 +7,7 @@ from email.parser import BytesParser
 # Each email becomes one row with selected header fields + label
 
 def makeCSVfolders():
-    src = "../../spamAssassinDataset"
+    src = "../../data/raw"
     folder_labels = ["easyham", "hardham", "spam"]
     output_file = "../../data/pre_processed.csv"
     
