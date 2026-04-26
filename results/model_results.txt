@@ -1,0 +1,72 @@
+
+===== RANDOM FOREST =====
+              precision    recall  f1-score   support
+
+           0       0.96      0.94      0.95       831
+           1       0.87      0.92      0.90       379
+
+    accuracy                           0.93      1210
+   macro avg       0.92      0.93      0.92      1210
+weighted avg       0.94      0.93      0.93      1210
+
+Metric for Random Forest: Precision: 0.873 | Recall: 0.923 | Accuracy: 0.934
+Confusion Matrix:
+ [[780  51]
+ [ 29 350]]
+Precision: 0.9355449397122381
+Recall: 0.9338842975206612
+F1-Score: 0.9343732394730178
+
+===== GRADIENT BOOSTED TREE =====
+              precision    recall  f1-score   support
+
+           0       0.96      0.97      0.96      2065
+           1       0.94      0.90      0.92       959
+
+    accuracy                           0.95      3024
+   macro avg       0.95      0.94      0.94      3024
+weighted avg       0.95      0.95      0.95      3024
+
+Metric for Gradient Boosted Tree: Precision: 0.935 | Recall: 0.902 | Accuracy: 0.949
+Confusion Matrix:
+ [[2005   60]
+ [  94  865]]
+Precision: 0.9488482884981218
+Recall: 0.9490740740740741
+F1-Score: 0.9488224622286219
+
+===== HIST GRADIENT BOOSTED TREE =====
+              precision    recall  f1-score   support
+
+           0       0.96      0.97      0.97      2084
+           1       0.94      0.91      0.93       940
+
+    accuracy                           0.95      3024
+   macro avg       0.95      0.94      0.95      3024
+weighted avg       0.95      0.95      0.95      3024
+
+Metric for Hist Gradient Boosted Tree: Precision: 0.939 | Recall: 0.914 | Accuracy: 0.955
+Confusion Matrix:
+ [[2028   56]
+ [  81  859]]
+Precision: 0.9545073135093267
+Recall: 0.9546957671957672
+F1-Score: 0.9545255417328818
+
+===== XGBOOST =====
+              precision    recall  f1-score   support
+
+           0       0.96      0.97      0.97      2084
+           1       0.93      0.91      0.92       940
+
+    accuracy                           0.95      3024
+   macro avg       0.95      0.94      0.94      3024
+weighted avg       0.95      0.95      0.95      3024
+
+Metric for XGBoost: Precision: 0.932 | Recall: 0.911 | Accuracy: 0.952
+Confusion Matrix:
+ [[2022   62]
+ [  84  856]]
+Precision: 0.9515184041327832
+Recall: 0.9517195767195767
+F1-Score: 0.9515604904978342
